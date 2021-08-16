@@ -3,11 +3,9 @@ import {
   DoCheck,
   EventEmitter,
   Input,
-  OnChanges,
   OnDestroy,
   OnInit,
   Output,
-  SimpleChanges,
 } from '@angular/core';
 import { Product } from '../product.model';
 

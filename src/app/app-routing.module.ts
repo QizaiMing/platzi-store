@@ -32,6 +32,16 @@ const routes: Routes = [
           import('./products/products.module').then((m) => m.ProductsModule),
       },
       {
+        path: 'order',
+        loadChildren: () =>
+          import('./order/order.module').then((m) => m.OrderModule),
+      },
+      {
+        path: 'auth',
+        loadChildren: () =>
+          import('./auth/auth.module').then((m) => m.AuthModule),
+      },
+      {
         path: 'contact',
         canActivate: [AdminGuard],
         component: ContactComponent,
